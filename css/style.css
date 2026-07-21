@@ -98,9 +98,13 @@ h5,
   visibility: visible;
 }
 
+.block-cta-1 .text-white h4 {
+  color: white !important;
+}
+
 .btn {
   border-radius: 0;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none !important;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -202,7 +206,7 @@ h5,
 
 .site-section-heading {
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -893,7 +897,7 @@ h5,
 }
 
 .site-blocks-cover h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
   color: #fff;
 }
@@ -1081,11 +1085,68 @@ h5,
   }
 }
 
+
+
+
+
 .feature-blocks-1 {
   position: relative;
   margin-top: -70px;
   z-index: 2;
   color: #999999;
+}
+
+
+
+.diferente-section .card {
+  border-radius: 20px !important;
+  /* Esquinas más redondeadas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.diferente-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+.diferente-section .card-body {
+  padding: 2rem 1.5rem;
+}
+
+/* Iconos - Corrección del ::before */
+.diferente-section .icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f4f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.85rem;
+  margin: 0 auto 1.2rem;
+  color: #22314f;
+  position: relative;
+}
+
+/* Eliminar cualquier ::before que esté interfiriendo */
+.diferente-section .icon-circle::before,
+.diferente-section .icon-circle::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Más espacio entre la fila superior e inferior */
+.diferente-section .row {
+  row-gap: 3rem !important;
+  /* ← Este es el que más espacio da entre filas */
+}
+
+/* Títulos */
+.diferente-section .card-title {
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .feature-blocks-1.no-margin-top {
@@ -1297,7 +1358,7 @@ h5,
   position: relative;
   display: inline-block;
   padding: 20px;
-  font-size: 30px;
+  font-size: 10px;
   color: #000;
 }
 
@@ -2460,6 +2521,12 @@ h5,
 .events-wrap,
 .events-bg-img {
   width: 50%;
+}
+
+.half.bg-img.img {
+  min-height: 250px !important;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 991.98px) {
