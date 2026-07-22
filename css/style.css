@@ -102,6 +102,47 @@ h5,
   color: white !important;
 }
 
+@media (max-width: 768px) {
+
+  .block-quick-info-2 {
+    top: -20px !important;
+  }
+
+  .block-quick-info-2 .block-quick-info-2-inner {
+    margin-top: 0 !important;
+  }
+
+  .block-cta-1 {
+    padding-top: 480px !important;
+  }
+
+}
+
+.block-cta-1 {
+  padding-top: 50px !important;
+  padding-bottom: 1px;
+
+}
+
+
+.block-cta-1 h2 {
+  font-size: 1.5rem !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Espacio vertical entre las dos filas en móvil */
+@media (max-width: 768px) {
+  .block-cta-1 .row.gx-5 {
+    row-gap: 2.5rem !important;
+    /* ← Este es el que controla el espacio vertical */
+  }
+
+  .block-cta-1 h5.mb-0 {
+    margin-top: 8px;
+    margin-bottom: 1px;
+  }
+}
+
 .btn {
   border-radius: 0;
   font-size: 20px;
@@ -1085,8 +1126,23 @@ h5,
   }
 }
 
+@media (max-width:768px) {
 
+  .block-quick-info-2 {
+    position: relative !important;
+    top: 0 !important;
+    padding-bottom: 20px;
+  }
 
+  .block-quick-info-2 .block-quick-info-2-inner {
+    margin-top: 0;
+  }
+
+  .block-cta-1 {
+    padding-top: 70px !important;
+  }
+
+}
 
 
 .feature-blocks-1 {
@@ -2523,10 +2579,86 @@ h5,
   width: 50%;
 }
 
+/* Servicios - General */
 .half.bg-img.img {
-  min-height: 250px !important;
+  min-height: 320px;
   background-size: cover;
   background-position: center;
+}
+
+.half.bg-white {
+  display: flex;
+
+}
+
+@media (max-width: 768px) {
+
+  /* Espacio entre cards */
+  .half-wrap {
+    margin-bottom: 25px;
+  }
+
+  /* Cada servicio será una card */
+  .half-wrap {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+  }
+
+  /* Imagen arriba */
+  .half.bg-img.img {
+    order: 1;
+    width: 100%;
+    min-height: 180px !important;
+    height: 400px !important;
+    background-size: cover;
+
+  }
+
+  /* Texto abajo */
+  .half.bg-white {
+    order: 2;
+    width: 100%;
+    min-height: auto !important;
+    background: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Padding del texto */
+  .half.bg-white .text,
+  .half .text-left {
+    padding: 22px !important;
+    text-align: left;
+  }
+
+  /* Título */
+  .half h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  /* Descripción */
+  .half p {
+    font-size: .95rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 0;
+  }
+
+  /* Quitar flechas */
+  .half.arrow-left::after,
+  .half.arrow-right::after {
+    display: none;
+  }
+
+  /* Eliminar espacios innecesarios */
+  .half {
+    height: auto !important;
+  }
+
 }
 
 @media (max-width: 991.98px) {
@@ -2571,6 +2703,18 @@ h5,
 
 .half-wrap>.half.arrow-right {
   position: relative;
+}
+
+.half.bg-white {
+  min-height: 120px !important;
+}
+
+.half.bg-white .text {
+  text-align: center;
+  padding: 3rem !important;
+  font-size: medium;
+  font-weight: 400;
+
 }
 
 @media (max-width: 767.98px) {
@@ -2644,7 +2788,7 @@ h5,
   padding: 30px;
   background: #fff;
   margin-top: -80px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.08);
 }
 
 .block-quick-info-2 .quick-info-2 .icon {
@@ -2740,10 +2884,13 @@ h5,
 }
 
 @media (max-width: 991.98px) {
+
   .block-half-content-1 .block-half-content-text {
     width: 100%;
-    padding: 20px 15px;
+    padding: 30px 30px !important;
+
   }
+
 }
 
 .block-half-content-1 .block-half-content-text .block-half-content-heading {
@@ -2800,6 +2947,16 @@ h5,
   background: rgba(98, 219, 203, 0.9);
 }
 
+@media (max-width: 991px) {
+  .block-cta-1.primary-overlay.pt-5::before {
+    padding-top: 300px;
+  }
+
+  .block-half-content-heading h2 {
+    font-size: 1rem;
+  }
+}
+
 .subscription .form-control {
   height: 55px;
 }
@@ -2807,6 +2964,35 @@ h5,
 .subscription .btn {
   padding-top: 7px !important;
   padding-bottom: 7px !important;
+}
+
+@media (max-width: 768px) {
+
+  .block-counter-1 .number-wrap {
+    font-size: 2rem !important;
+  }
+
+  .block-counter-1-caption {
+    font-size: 0.75rem;
+    line-height: 1.3;
+    display: block;
+  }
+
+  .counter {
+    text-align: center;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .container {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
 }
 
 /*# sourceMappingURL=style.css.map */
